@@ -7,7 +7,7 @@ export function TIStageSlider() {
   const stages = stagesData.stages
 
   return (
-    <GlassPanel className="sticky top-20 z-30 mb-8">
+    <GlassPanel className="mb-8">
       <div className="flex flex-col gap-4">
         <div className="flex flex-wrap items-end justify-between gap-3">
           <div>

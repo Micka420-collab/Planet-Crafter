@@ -125,16 +125,14 @@ a:hover {
     radial-gradient(120% 70% at 50% -5%, var(--fog), transparent 55%),
     radial-gradient(70% 45% at 85% 15%, color-mix(in oklab, var(--accent) 14%, transparent), transparent 50%);
   transition: background 700ms ease;
-  opacity: 0.85;
+  opacity: 0.4;
 }
 
 /* Dark industrial panels (Claude DA cards) */
 .glass {
-  background: rgba(14, 16, 18, 0.9);
+  background: #0e1012;
   border: 1px solid rgba(237, 230, 218, 0.11);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
 }
 
 .prose-dense p {

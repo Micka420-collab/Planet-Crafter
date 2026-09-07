@@ -1,0 +1,55 @@
+{
+  "id": "dlc",
+  "title": "Timeline DLC & versions",
+  "intro": "Le jeu a grandi d'un EA survival à un sandbox multi-planètes / lunes. Dates indicatives — toujours confirmer sur Steam / notes de patch.",
+  "timeline": [
+    {
+      "date": "24 mars 2022",
+      "title": "Early Access",
+      "body": "Lancement EA sur Steam. La boucle terraformation (Heat · O₂ · Pression · Biomasse → TI) est déjà centrale."
+    },
+    {
+      "date": "10 avril 2024",
+      "title": "Version 1.0",
+      "body": "Sortie 1.0 : fins, polish, contenu « complete » sur Prime. Extraction Platform et routes de fin stabilisées."
+    },
+    {
+      "date": "~9 octobre 2024",
+      "title": "Planet Humble (DLC)",
+      "body": "DLC payant : nouvelle planète Humble — biomes et progression dédiés. Accessible en nouvelle partie ou via voyage interplanétaire après Complete sur Prime."
+    },
+    {
+      "date": "~mai 2025",
+      "title": "The Moons (update gratuite)",
+      "body": "Update gratuite : lune Selenea (+ autre accès lune via Extraction Platform / Interplanetary Travel Rocket), rockets T2, megadome, robots, fuses spécialisés, TI système. Selenea est jouable en départ difficile ou en voyage."
+    },
+    {
+      "date": "~17 novembre 2025",
+      "title": "Toxicity (DLC)",
+      "body": "DLC payant Toxicity : nouvelle planète / direction environnementale toxique et défis associés. Vérifier les notes Steam pour le détail de votre build."
+    },
+    {
+      "date": "~avril 2026",
+      "title": "Update 2.0",
+      "body": "Mise à jour majeure 2.0 — consolidation des systèmes, QOL, contenu post-Moons. Prépare la suite (consoles, Skeo)."
+    },
+    {
+      "date": "~juillet 2026",
+      "title": "Consoles PS5 / Xbox",
+      "body": "Sortie PlayStation 5 et Xbox Series X|S (≈ juil. 2026). Pas de cross-play inter-écosystème au lancement — vérifier les storefronts pour SKU et Game Pass."
+    },
+    {
+      "date": "~1 septembre 2026",
+      "title": "Skeo (lune gratuite) — LIVE",
+      "body": "Nouvelle lune gratuite Skeo. PAS une planète de départ : déblocage après terraformation complète d'un corps de départ (Prime, Toxicity, Humble OU Selenea), puis Extraction Platform + Interplanetary Travel Rocket. Contenu : pod / base souterraine, machines avancées (incubateurs T2, nurseries, drones T3), nouvelle faune / combinaison / statue. Mentions « Starform Robotics » signalées côté communauté — [communauté], pas confirmé comme canon studio."
+    }
+  ],
+  "playableBodies": [
+    { "name": "Prime", "kind": "planète", "note": "Carte de base / départ classique" },
+    { "name": "Humble", "kind": "planète", "note": "DLC Planet Humble" },
+    { "name": "Toxicity", "kind": "planète", "note": "DLC Toxicity" },
+    { "name": "Selenea", "kind": "lune", "note": "Update Moons — départ possible (plus dur) ou voyage" },
+    { "name": "Skeo", "kind": "lune", "note": "Update gratuite 09/2026 — voyage uniquement (pas de départ)" }
+  ],
+  "tip": "Les sauvegardes EA → 1.0 → DLC / updates gratuites sont en général prises en charge, mais sauvegardez avant gros patchs. Le TI « système » cumule plusieurs corps après voyages. Skeo exige Complete sur un corps éligible avant le rocket."
+}

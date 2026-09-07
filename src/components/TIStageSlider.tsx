@@ -1,0 +1,55 @@
+import stagesData from '../data/stages.json'
+import { useThemeStage } from '../hooks/useThemeStage'
+import { GlassPanel } from './GlassPanel'
+
+export function TIStageSlider() {
+  const { stageIndex, setStageIndex, stage } = useThemeStage()
+  const stages = stagesData.stages
+
+  return (
+    <GlassPanel className="sticky top-20 z-30 mb-8">
+      <div className="flex flex-col gap-4">
+        <div className="flex flex-wrap items-end justify-between gap-3">
+          <div>
+            <p className="text-xs uppercase tracking-[0.2em] text-white/55">Simulateur d&apos;étape TI</p>
+            <p className="font-headline text-2xl font-semibold" style={{ color: stage.accent }}>
+              {stage.name}
+            </p>
+            <p className="text-sm text-white/65">
+              Seuil : {stage.threshold}
+              {stage.thresholdNote ? ` — ${stage.thresholdNote}` : ''}
+            </p>
+          </div>
+          <p className="text-xs text-white/50">
+            {stageIndex + 1} / {stages.length}
+          </p>
+        </div>
+        <label className="sr-only" htmlFor="ti-slider">
+          Étape de terraformation
+        </label>
+        <input
+          id="ti-slider"
+          className="slider-ti"
+          type="range"
+          min={0}
+          max={stages.length - 1}
+          step={1}
+          value={stageIndex}
+          onChange={(e) => setStageIndex(Number(e.target.value))}
+          aria-valuetext={stage.name}
+        />
+        <p className="text-sm text-white/75">{stage.description}</p>
+        <ul className="flex flex-wrap gap-2">
+          {stage.unlocks.map((u) => (
+            <li
+              key={u}
+              className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs text-white/80"
+            >
+              {u}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </GlassPanel>
+  )
+}

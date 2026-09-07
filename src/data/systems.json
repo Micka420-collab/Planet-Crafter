@@ -1,0 +1,83 @@
+{
+  "id": "systemes",
+  "title": "Systèmes",
+  "intro": "Quatre piliers alimentent le TI. Autour : rockets (multiplicateurs globaux), météores (événements & minerais), fuses (boosts), drones et voyage interplanétaire late-game.",
+  "pillars": [
+    {
+      "id": "heat",
+      "name": "Heat (chaleur)",
+      "icon": "🔥",
+      "body": "Réchauffe la planète : chauffages, drills thermiques, machines avancées. Critique early pour débloquer eau et météo.",
+      "tips": ["Priorisez l'énergie avant de spammer les heaters", "Les rockets heat multiplient la prod globale"]
+    },
+    {
+      "id": "oxygen",
+      "name": "Oxygène (O₂)",
+      "icon": "🫧",
+      "body": "Vital pour la survie puis pour l'atmosphère. Extracteurs, végétation et machines dédiées.",
+      "tips": ["Les trees / flora boostent fortement O₂ mid/late", "Surveillez votre tank perso en début de partie"]
+    },
+    {
+      "id": "pressure",
+      "name": "Pression",
+      "icon": "🜁",
+      "body": "Épaissit l'atmosphère via drills / machines de pression. Synergie forte avec heat pour le cycle de l'eau.",
+      "tips": ["Équilibrez avec heat pour accélérer pluie/lacs", "Optimizers et fuses changent la donne"]
+    },
+    {
+      "id": "biomass",
+      "name": "Biomasse",
+      "icon": "🌿",
+      "body": "Flore, insectes, poissons, amphibiens, mammifères. Souvent le levier late-game le plus puissant (farms + nourriture T2).",
+      "tips": ["Graines / œufs / effigies rares = jackpot", "Les rockets biomasse / animaux scalent très fort"]
+    }
+  ],
+  "rockets": {
+    "title": "Rockets",
+    "body": "Lancées depuis une plateforme, elles appliquent des multiplicateurs (heat, pression, O₂, plantes, insectes, animaux…). Les T2 (Moons et contenus récents) poussent encore plus loin. L'Interplanetary Travel Rocket (craft sur Extraction Platform après Complete) permet de voyager vers d'autres corps — Selenea, Humble, Toxicity, Skeo…",
+    "notes": [
+      "Certaines rockets de voyage sont à usage unique — prévoyez des energy fuses",
+      "Vous pouvez préparer plusieurs types sur la plateforme de départ (selon patch)",
+      "Interplanetary Travel Rocket : condition Complete + Extraction Platform ; Skeo n'est pas un départ direct"
+    ]
+  },
+  "meteors": {
+    "title": "Météores",
+    "body": "Événements qui déposent des minerais et créent des cratères. Risque + opportunité : scrappez vite, protégez les structures fragiles.",
+    "notes": ["Les cratères deviennent des landmarks d'exploration", "Utile pour minerais avancés mid-game"]
+  },
+  "fuses": {
+    "title": "Fuses",
+    "body": "Consommables / modules qui boostent production, croissance, énergie, ou catégories biomasse (animaux, insectes…). Les cartouches et fuses spécialisés apparaissent avec la progression et les DLC.",
+    "notes": [
+      "Energy fuses : souvent critiques pour voyages",
+      "Growth / animals / insects : accélèrent le late biomasse"
+    ]
+  },
+  "extras": [
+    {
+      "title": "Drones T3",
+      "body": "Les drones automatisent collecte / logistique. L'update Skeo débloque / met en avant des drones de niveau 3 (T3) avec les machines biomasse avancées (incubateurs T2, nurseries).",
+      "notes": [
+        "Montez d'abord énergie + réseau de stockage",
+        "T3 = late-game / contenu Skeo — vérifiez blueprints in-game"
+      ]
+    },
+    {
+      "title": "Construction souterraine (Skeo)",
+      "body": "Sur Skeo, un mode / pod souterrain permet de bâtir une base sous la surface — nouveau gameplay de layout par rapport aux habitats surface Prime.",
+      "notes": [
+        "Pas disponible comme départ : voyage après Complete",
+        "Préparez matériaux de retour (Extraction + rocket) avant de partir"
+      ]
+    },
+    {
+      "title": "Interplanetary Travel Rocket",
+      "body": "Craftée sur l'Extraction Platform après Complete Terraformation. Transporte inventaire / équipements / blueprints connus vers un autre corps du système (lunes et planètes DLC selon ownership).",
+      "notes": [
+        "Skeo : destination post-Complete uniquement",
+        "Emportez de quoi reconstruire Extraction + rocket à l'arrivée"
+      ]
+    }
+  ]
+}

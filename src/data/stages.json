@@ -1,0 +1,229 @@
+{
+  "id": "etapes",
+  "title": "Étapes de terraformation",
+  "intro": "L'Index de Terraformation (TI) agrège Heat, Oxygène, Pression et Biomasse. Les seuils ci-dessous correspondent à la progression classique sur Prime (wiki Fandom / post-1.0). Les patches, lunes et DLC peuvent faire varier les valeurs — vérifiez toujours l'étape nommée dans votre build.",
+  "unitNote": "kTi = 10³ · MTi = 10⁶ · GTi = 10⁹ · TTi = 10¹²",
+  "variance": "Complete Terraformation sur Prime : seuil wiki par défaut ≈ 4 TTi. Certains builds / guides communautaires citaient encore 5 TTi (souvent confondu avec des messages / unlocks story autour de 5 TTi). Après Moons / 2.0, un TI « système » cumule plusieurs corps. Prenez les seuils comme repères.",
+  "planetVariants": {
+    "selenea": {
+      "file": "stages-selenea.json",
+      "label": "Selenea (lune)",
+      "note": "7 étapes wiki — Complete à 5 TTi (voir fichier dédié)."
+    }
+  },
+  "stages": [
+    {
+      "id": "barren",
+      "name": "Barren",
+      "order": 1,
+      "threshold": "0 Ti",
+      "sky": "#2a120c",
+      "haze": "#c45c2a",
+      "accent": "#e87a3a",
+      "description": "Désert rouge, ciel poussiéreux, aucune atmosphère viable. Priorité : oxygène personnel, abri, premières machines heat/pression.",
+      "unlocks": [
+        "Survie de base",
+        "Habitat T1",
+        "Chauffages / foreuses précoces"
+      ]
+    },
+    {
+      "id": "blue-sky",
+      "name": "Blue Sky",
+      "order": 2,
+      "threshold": "≈ 175 kTi",
+      "sky": "#1a3350",
+      "haze": "#4a8ec8",
+      "accent": "#6eb6ff",
+      "description": "Le ciel bascule vers le bleu. Transition surtout esthétique, mais signal fort que le réseau énergétique tient.",
+      "unlocks": [
+        "Ambiance visuelle majeure",
+        "Motivation mid-game"
+      ]
+    },
+    {
+      "id": "clouds",
+      "name": "Clouds",
+      "order": 3,
+      "threshold": "≈ 350 kTi",
+      "sky": "#243a52",
+      "haze": "#6a9abb",
+      "accent": "#8ec5e8",
+      "description": "Condensation visible. L'atmosphère s'épaissit ; la météo devient plus dynamique.",
+      "unlocks": [
+        "Nuages",
+        "Préparation pluie"
+      ]
+    },
+    {
+      "id": "rain",
+      "name": "Rain",
+      "order": 4,
+      "threshold": "≈ 875 kTi",
+      "sky": "#1e3a48",
+      "haze": "#5a9aaa",
+      "accent": "#7ec8d4",
+      "description": "Premières pluies. L'eau commence à transformer le relief et l'éclairage.",
+      "unlocks": [
+        "Pluie",
+        "Bassins temporaires"
+      ]
+    },
+    {
+      "id": "liquid-water",
+      "name": "Liquid Water",
+      "order": 5,
+      "threshold": "≈ 3 MTi",
+      "sky": "#163848",
+      "haze": "#3a8aaa",
+      "accent": "#5ec0d8",
+      "description": "Eau liquide durable. Les bas-fonds se remplissent progressivement.",
+      "unlocks": [
+        "Eau permanente",
+        "Nouveaux axes d'exploration"
+      ]
+    },
+    {
+      "id": "lakes",
+      "name": "Lakes",
+      "order": 6,
+      "threshold": "≈ 50 MTi",
+      "sky": "#143c44",
+      "haze": "#2f8f9a",
+      "accent": "#4ec4b0",
+      "description": "Lacs stables. Le paysage n'est plus seulement rouge : le bleu gagne du terrain.",
+      "unlocks": [
+        "Lacs",
+        "Biomes aquatiques émergents"
+      ]
+    },
+    {
+      "id": "moss",
+      "name": "Moss",
+      "order": 7,
+      "threshold": "≈ 200 MTi",
+      "sky": "#1a4038",
+      "haze": "#3a9a6a",
+      "accent": "#5ecf8a",
+      "description": "Première biomasse visible. La planète verdit par touches.",
+      "unlocks": [
+        "Mousse",
+        "Focus biomasse"
+      ]
+    },
+    {
+      "id": "flora",
+      "name": "Flora",
+      "order": 8,
+      "threshold": "≈ 700 MTi",
+      "sky": "#1a4838",
+      "haze": "#3cb37a",
+      "accent": "#6adf9a",
+      "description": "Flore plus dense. Farms, graines rares et optimisation biomasse deviennent critiques.",
+      "unlocks": [
+        "Flore",
+        "Farms avancées"
+      ]
+    },
+    {
+      "id": "trees",
+      "name": "Trees",
+      "order": 9,
+      "threshold": "≈ 2 GTi",
+      "sky": "#184830",
+      "haze": "#2fa86a",
+      "accent": "#58d88a",
+      "description": "Arbres et canopée. Le sentiment « planète vivante » s'installe.",
+      "unlocks": [
+        "Arbres",
+        "Paysages lush"
+      ]
+    },
+    {
+      "id": "insects",
+      "name": "Insects",
+      "order": 10,
+      "threshold": "≈ 8 GTi",
+      "sky": "#164828",
+      "haze": "#38b060",
+      "accent": "#70e090",
+      "description": "Insectes et chaînes biomasse associées (papillons, ruches… selon contenus).",
+      "unlocks": [
+        "Insectes",
+        "Farms insectes"
+      ]
+    },
+    {
+      "id": "breathable",
+      "name": "Breathable Atmosphere",
+      "order": 11,
+      "threshold": "≈ 32 GTi",
+      "sky": "#1a5070",
+      "haze": "#4aa8d0",
+      "accent": "#7ad0ff",
+      "description": "Atmosphère respirable : libération progressive des contraintes d'oxygène extérieur.",
+      "unlocks": [
+        "Respirabilité",
+        "Confort outdoor"
+      ]
+    },
+    {
+      "id": "fish",
+      "name": "Fish",
+      "order": 12,
+      "threshold": "≈ 120 GTi",
+      "sky": "#185868",
+      "haze": "#3a9ab8",
+      "accent": "#5ec8e0",
+      "description": "Poissons et vie aquatique. Les lacs deviennent des écosystèmes.",
+      "unlocks": [
+        "Poissons",
+        "Farms aquatiques"
+      ]
+    },
+    {
+      "id": "amphibians",
+      "name": "Amphibians",
+      "order": 13,
+      "threshold": "≈ 425 GTi",
+      "sky": "#1a5848",
+      "haze": "#3aaa88",
+      "accent": "#60d8b0",
+      "description": "Amphibiens (grenouilles…). Biomasse late-game en forte accélération.",
+      "unlocks": [
+        "Amphibiens",
+        "Œufs / farms associées"
+      ]
+    },
+    {
+      "id": "mammals",
+      "name": "Mammals",
+      "order": 14,
+      "threshold": "≈ 1.25 TTi",
+      "sky": "#205060",
+      "haze": "#48a090",
+      "accent": "#78d8c0",
+      "description": "Mammifères. La planète approche du climax écologique.",
+      "unlocks": [
+        "Mammifères",
+        "Nourriture T2 / animaux"
+      ]
+    },
+    {
+      "id": "complete",
+      "name": "Complete Terraformation",
+      "order": 15,
+      "threshold": "≈ 4 TTi",
+      "thresholdNote": "Wiki Fandom (Prime/Humble) : 4 TTi. Certains guides / anciennes builds citaient 5 TTi — souvent lié aux messages story / unlocks autour de 5 TTi, pas au nom de l'étape.",
+      "sky": "#1e6078",
+      "haze": "#50b8d0",
+      "accent": "#90e8ff",
+      "description": "Terraformation complète : Extraction Platform, fins de partie, messages Sentinel / options de départ et voyage interplanétaire (Moons, Skeo…).",
+      "unlocks": [
+        "Extraction Platform",
+        "Fins de partie",
+        "Voyage interplanétaire (selon contenu)"
+      ]
+    }
+  ]
+}

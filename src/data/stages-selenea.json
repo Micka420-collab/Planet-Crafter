@@ -1,0 +1,87 @@
+{
+  "id": "selenea",
+  "bodyName": "Selenea",
+  "kind": "lune",
+  "source": "planet-crafter.fandom.com/wiki/Terraformation_Stages",
+  "intro": "Étapes TI de la lune Selenea (wiki Fandom). Progression condensée par rapport à Prime : 7 étapes jusqu'à Complete à 5 TTi.",
+  "stages": [
+    {
+      "id": "sel-barren",
+      "name": "Barren",
+      "order": 1,
+      "threshold": "0 Ti",
+      "sky": "#1a1420",
+      "haze": "#6a5a78",
+      "accent": "#a890c0",
+      "description": "Lune gelée / stérile. Structures d'anciennes expéditions sous la glace — la chaleur débloque des accès.",
+      "unlocks": ["Survie lune", "Salvage megadomes"]
+    },
+    {
+      "id": "sel-water-cycle",
+      "name": "Water Cycle",
+      "order": 2,
+      "threshold": "150 MTi",
+      "sky": "#142838",
+      "haze": "#3a7a9a",
+      "accent": "#5eb0d0",
+      "description": "Cycle de l'eau engagé. Fonte et hydrologie locale.",
+      "unlocks": ["Eau / cycle", "Accès zones gelées"]
+    },
+    {
+      "id": "sel-vegetation",
+      "name": "Vegetation",
+      "order": 3,
+      "threshold": "1.5 GTi",
+      "sky": "#143828",
+      "haze": "#2f8a5a",
+      "accent": "#50c880",
+      "description": "Végétation installée. Farms et biomasse deviennent le levier principal.",
+      "unlocks": ["Végétation", "Farms"]
+    },
+    {
+      "id": "sel-clear-sky",
+      "name": "Clear Sky",
+      "order": 4,
+      "threshold": "20 GTi",
+      "sky": "#1a4060",
+      "haze": "#4a98c0",
+      "accent": "#78c8f0",
+      "description": "Ciel dégagé. Transition visuelle majeure sur Selenea.",
+      "unlocks": ["Ciel clair", "Confort outdoor"]
+    },
+    {
+      "id": "sel-breathable",
+      "name": "Breathable Atmosphere",
+      "order": 5,
+      "threshold": "250 GTi",
+      "sky": "#185870",
+      "haze": "#4aa8c8",
+      "accent": "#7ad8ff",
+      "description": "Atmosphère respirable. Contraintes d'oxygène extérieur allégées.",
+      "unlocks": ["Respirabilité"]
+    },
+    {
+      "id": "sel-natural-life",
+      "name": "Natural Life",
+      "order": 6,
+      "threshold": "1 TTi",
+      "sky": "#184848",
+      "haze": "#3aaa88",
+      "accent": "#60d8b0",
+      "description": "Vie naturelle. Faune locale (ex. Arbatillo signalé sur wiki) et traits génétiques associés.",
+      "unlocks": ["Vie naturelle", "Faune Selenea"]
+    },
+    {
+      "id": "sel-complete",
+      "name": "Complete Terraformation",
+      "order": 7,
+      "threshold": "5 TTi",
+      "thresholdNote": "Seuil wiki Selenea (différent de Prime à 4 TTi).",
+      "sky": "#1e5870",
+      "haze": "#50b0c8",
+      "accent": "#90e0f8",
+      "description": "Terraformation complète de Selenea. Ouvre la suite du voyage interplanétaire (Extraction Platform / rocket) selon votre parcours.",
+      "unlocks": ["Complete Selenea", "Voyage / extraction"]
+    }
+  ]
+}

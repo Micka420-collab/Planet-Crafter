@@ -1,0 +1,32 @@
+{
+  "id": "rares",
+  "title": "Rares & collection",
+  "intro": "Objets à faible spawn ou liés à des chaînes d'exploration. Résumé communautaire — pas une liste exhaustive de coords. [communauté]",
+  "categories": [
+    {
+      "name": "Golden crates",
+      "body": "[communauté] Containers dorés dispersés dans le monde (butin premium, effigies, ressources avancées). Un article GameRant (ère Lore & Automation) listait ~17 crates sur Prime — chiffre historique ; les maps et patches ont ensuite augmenté le total (guides Steam / wiki citent souvent ~27 côté base). Peut encore changer avec DLC / updates. Pas de coords inventées ici."
+    },
+    {
+      "name": "Effigies",
+      "body": "[communauté] Statuettes / trophées liés à la faune et à la collection. Certaines sont liées aux achievements et à la biomasse (animaux). Skeo ajoute une statue animalière signalée en ruines de portail (notes update)."
+    },
+    {
+      "name": "Graines & œufs rares",
+      "body": "[communauté] Seeds dorées / variantes, œufs de grenouilles, papillons spéciaux… Ils débloquent les meilleurs générateurs de biomasse. Priorité absolue dès que la flore démarre."
+    },
+    {
+      "name": "Pleom (golden seeds)",
+      "body": "[communauté] Pleom est souvent cité comme lié aux golden seeds / chaîne de flore rare — boost biomasse disproportionné. Vérifiez votre patch : noms et recettes évoluent avec les DLC."
+    },
+    {
+      "name": "Iterra (rare seed)",
+      "body": "[communauté] Iterra apparaît dans les discussions comme rare seed / variante de collection. Traitez comme entrée communauté ; croisez wiki / inventaire in-game plutôt que des guides obsolètes."
+    },
+    {
+      "name": "Warden Key Detector",
+      "body": "[canon parcours] Blueprint au Cenote → craft → équipement pour révéler 13 caches Subversion. Voir endings.json pour la séparation critique 10 clés ruines vs 13 clés Detector. Résumé pointeur uniquement — pas de walkthrough coords."
+    }
+  ],
+  "advice": "Ne spoilez pas tout au premier run si vous aimez la découverte. Pour le 100 % achievements, prévoyez une checklist coffre + map screen. Label [communauté] = non exhaustif / patch-dépendant."
+}

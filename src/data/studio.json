@@ -1,0 +1,15 @@
+{
+  "id": "studio",
+  "title": "Studio & métadonnées",
+  "studio": "Miju Games",
+  "facts": [
+    { "label": "Développeur / éditeur", "value": "Miju Games" },
+    { "label": "Early Access", "value": "24 mars 2022" },
+    { "label": "Sortie 1.0", "value": "10 avril 2024" },
+    { "label": "App Steam", "value": "1284190" },
+    { "label": "OST", "value": "Benjamin Young" },
+    { "label": "Genre", "value": "Survival · Construction · Sandbox · Co-op" }
+  ],
+  "ost": "La bande-originale de Benjamin Young accompagne la montée émotionnelle barren → lush. Plusieurs pistes additionnelles arrivent avec les lunes / DLC.",
+  "note": "Soutenez le studio via Steam / wishlist DLC. Ce portail est un projet fan indépendant."
+}

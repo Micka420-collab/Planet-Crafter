@@ -1,0 +1,50 @@
+{
+  "id": "fins",
+  "title": "Fins Warden & extraction",
+  "intro": "Après Complete Terraformation, construisez l'Extraction Platform. Plusieurs issues existent. Focus ici : Ancient Paradise (ruines / achievement exploration) vs Subversion (portail Warden via Detector) — et l'avertissement crucial sur les clés.",
+  "warning": "⚠️ Ne mélangez pas les deux chasses de clés. Les ~10 clés de la route ruines (Mushroom River → Ancient City → Lost Paradise / Ancient Paradise) ne sont PAS les mêmes que les 13 clés révélées par le Warden Key Detector (dont 10 vont dans la plateforme pour Subversion). Utiliser les mauvaises clés / les laisser coincées dans les autels est l'erreur n°1 de la communauté.",
+  "routes": [
+    {
+      "id": "ancient-paradise",
+      "name": "Ancient Paradise",
+      "keys": "Chaîne ~10 clés (ruines)",
+      "summary": "Route exploration / ruines Warden : Mushroom River et sites liés, ouverture Ancient City / Lost Paradise. Les clés se placent dans des autels de la chaîne ruines et y restent souvent. Achievement « Ancient Paradise ». Ce n'est PAS la fin Subversion (portail) — vous pouvez faire Paradise sans Detector, et inversement les clés Paradise ne comptent pas pour le locker Subversion.",
+      "steps": [
+        "Suivre la chaîne Mushroom River / Super Alloy Cave",
+        "Collecter et placer les clés de la route ruines (autels dédiés)",
+        "Atteindre le sanctuaire / Lost Paradise pour l'achievement Ancient Paradise"
+      ]
+    },
+    {
+      "id": "subversion",
+      "name": "Subversion (Warden Portal)",
+      "keys": "13 autels via Detector → 10 clés dans la plateforme",
+      "summary": "Fin « partir avec les Wardens » via le portail. Blueprint du Warden Key Detector (Cenote) → craft + équipement → 13 caches monde. Placez exactement 10 clés dans l'inventaire / locker de l'Extraction Platform, puis choisissez l'option portail Warden. Distinct d'Ancient Paradise : autre set de clés, autre objectif.",
+      "steps": [
+        "Blueprint Detector au Cenote",
+        "Craft + équipement (slot outil)",
+        "13 clés monde → en garder 10 pour la plateforme (ne pas les laisser dans les mauvaises portes)",
+        "Complete Terraformation + Extraction Platform",
+        "Déposer 10 clés dans le locker de la plateforme → option Warden / Subversion"
+      ]
+    },
+    {
+      "id": "autres",
+      "name": "Autres issues (aperçu)",
+      "keys": "—",
+      "summary": "Subjection (anomalie / explosif Sentinel — souvent liée à des messages autour de ~5 TTi), Subservience (évacuation Riley / smugglers), départ « standard » Sentinel… Les conditions exactes dépendent des messages et du TI. Consultez wiki / guides Steam pour le détail sans spoiler excessif.",
+      "steps": [
+        "Lire les messages Sentinel late-game",
+        "Préparer Extraction Platform",
+        "Choisir l'option d'interface correspondante"
+      ]
+    }
+  ],
+  "checklist": [
+    "Séparateur coffre : « Ruines / Paradise » vs « Detector / Subversion »",
+    "Detector équipé = autels Subversion visibles",
+    "10 clés Detector dans la plateforme (pas seulement dans la base)",
+    "Ancient Paradise ≠ Subversion (objectifs et clés distincts)",
+    "Attendre l'étape Complete avant d'espérer le menu de fin"
+  ]
+}

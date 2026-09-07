@@ -1,0 +1,36 @@
+{
+  "id": "exploration",
+  "title": "Exploration",
+  "intro": "La carte se révèle par fragments. Coordinates HUD, biomes distincts, épaves et bunkers : l'exploration nourrit blueprints, lore et ressources rares.",
+  "hud": {
+    "title": "HUD & coordonnées",
+    "body": "Le HUD affiche des coordonnées (format X : Y : Z). Notez les points d'intérêt (épaves, autels, germes). Les guides communautaires utilisent ce référentiel — attention aux orientations et aux hauteurs (Y).",
+    "tips": [
+      "Gardez un carnet / coffre « POI » avec coords",
+      "Le jetpack et les chips de vitesse changent le rayon d'exploration"
+    ]
+  },
+  "map": {
+    "title": "Déblocage carte",
+    "body": "La map se remplit en explorant les biomes (brouillard levé au fur et à mesure) et via items / screens / rockets d'information selon progression. Certains biomes restent « brouillés » jusqu'à ce que vous les traversiez. Après terraformation avancée, le relief (lacs, verdure) change la lisibilité des landmarks. Astuce : rockets d'info T2 (Moons+) peuvent afficher davantage d'éléments organiques sur la carte."
+  },
+  "biomes": [
+    { "name": "Starting Valley / dunes", "blurb": "Zone de drop, scrap abondant, tutoriel naturel." },
+    { "name": "Caves & Super Alloy", "blurb": "Minerais avancés, passages vers ruines Warden." },
+    { "name": "Meteor Field / Crater", "blurb": "Impact zones, routes vers Cenote et POI late." },
+    { "name": "Cenote", "blurb": "Clé pour le détecteur Warden (fin Subversion)." },
+    { "name": "Mushroom River", "blurb": "Chaîne Ancient Paradise (clés / ruines)." },
+    { "name": "Gate Desert / Aluminum Hills", "blurb": "Grandes étendues, épaves et caches." },
+    { "name": "Waterfalls & lacs", "blurb": "S'ouvrent vraiment après rain/lakes ; routes verticales." },
+    { "name": "Cascades", "blurb": "Biome / zone Cascades sur Prime — patch Skeo (~09/2026) : nouveaux fragments d'épave signalés ; Grand Canyon supérieur aussi retouché. Revisitez si save ancienne." }
+  ],
+  "wrecks": {
+    "title": "Épaves & containers",
+    "body": "Les wrecks contiennent microchips, équipements, lore et parfois accès à des zones. Apportez lockers portables, lampes, et de l'oxygène. Certaines portes demandent des clés ou explosifs. Note Cascades (ère Skeo) : de nouveaux fragments sont apparus côté Cascades sur Prime — worth a second look après update.",
+    "tips": [
+      "Priorisez les chips blueprint early",
+      "Revisite après jetpack T+ : de nouveaux angles s'ouvrent",
+      "Après update Skeo : passez aux Cascades pour les nouveaux wreck fragments"
+    ]
+  }
+}

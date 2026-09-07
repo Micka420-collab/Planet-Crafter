@@ -1,0 +1,52 @@
+{
+  "id": "sources",
+  "title": "Sources & liens",
+  "intro": "Liens sortants utiles. Contenu de ce site : synthèse originale, pas de copie de guides protégés.",
+  "links": [
+    {
+      "name": "Steam — The Planet Crafter",
+      "url": "https://store.steampowered.com/app/1284190/The_Planet_Crafter/",
+      "why": "Achat, DLC, prix / promos, news officielles"
+    },
+    {
+      "name": "Steam News — Skeo LIVE",
+      "url": "https://store.steampowered.com/news/app/1284190/view/684137556498973556",
+      "why": "Annonce officielle lune gratuite Skeo (~1 sep. 2026) : accès, contenu, compat saves"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Planet_Crafter",
+      "why": "Fiche encyclopédique générale (timeline DLC / consoles)"
+    },
+    {
+      "name": "Wiki Fandom — Terraformation Stages",
+      "url": "https://planet-crafter.fandom.com/wiki/Terraformation_Stages",
+      "why": "Tables TI Prime/Humble + Selenea (seuils 4 TTi / 5 TTi)"
+    },
+    {
+      "name": "Wiki Fandom Planet Crafter",
+      "url": "https://planet-crafter.fandom.com/wiki/The_Planet_Crafter_Wiki",
+      "why": "Items, fins, crates (à croiser avec votre patch)"
+    },
+    {
+      "name": "GameRant — golden crates",
+      "url": "https://gamerant.com/the-planet-crafter-golden-crate-locations/",
+      "why": "Repères community historiques (~17 crates Prime à l'époque Lore update)"
+    },
+    {
+      "name": "Aroged — update Skeo (secondaire)",
+      "url": "https://www.aroged.com/2026/09/01/planet-craftsman-update-adds-new-moon-skeo/",
+      "why": "Article secondaire presse : résumé Skeo (pod souterrain, drones T3, Cascades). Croiser avec Steam News."
+    },
+    {
+      "name": "Steam Guide 2793723787",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2793723787",
+      "why": "Guide Steam communautaire (réf. demandée)"
+    },
+    {
+      "name": "TechRaptor",
+      "url": "https://techraptor.net/gaming/guides/planet-crafter-guide",
+      "why": "Articles / guides presse jeu"
+    }
+  ]
+}

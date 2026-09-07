@@ -1,0 +1,37 @@
+{
+  "id": "specs",
+  "title": "Specs, achievements & langues",
+  "pcSpecs": {
+    "note": "Repères Steam (peuvent évoluer). Vérifiez la page magasin.",
+    "minimum": [
+      "OS : Windows 10 64-bit",
+      "CPU : Dual Core 2.5 GHz",
+      "RAM : 4 Go",
+      "GPU : GTX 660 / équivalent",
+      "Stockage : ~4–8 Go (selon DLC)"
+    ],
+    "recommended": [
+      "OS : Windows 10/11 64-bit",
+      "CPU : Quad Core 3.0 GHz+",
+      "RAM : 8 Go+",
+      "GPU : GTX 1060 / équivalent ou mieux",
+      "SSD recommandé (bases larges + co-op)"
+    ]
+  },
+  "achievements": {
+    "count": 55,
+    "note": "Environ 55 succès Steam listés pour le jeu de base (le total peut augmenter avec DLC). Catégories typiques : étapes TI, exploration, crafting, fins, collection.",
+    "categories": [
+      "Progression terraformation",
+      "Construction / énergie",
+      "Exploration & wrecks",
+      "Biomasse & rares",
+      "Fins (Ancient Paradise, Subversion, …)",
+      "Co-op / défis divers"
+    ]
+  },
+  "languages": {
+    "interface": ["Anglais", "Français", "Allemand", "Espagnol", "Portugais brésilien", "Russe", "Chinois simplifié", "Japonais", "Polonais", "Autres selon patch"],
+    "note": "Le jeu est connu pour un bon support multilingue ; audio surtout ambiant / OST."
+  }
+}

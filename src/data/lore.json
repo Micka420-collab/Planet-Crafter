@@ -1,0 +1,38 @@
+{
+  "id": "lore",
+  "title": "Lore",
+  "intro": "Derrière le survival : une intrigue corporate, des prisonniers terraformeurs, et une civilisation antérieure — les Wardens. Labels [canon] / [communauté] / [incertain] pour séparer ce qui est supporté en jeu des lectures fan.",
+  "entries": [
+    {
+      "name": "Miju Games (diegesis & studio)",
+      "confidence": "canon",
+      "body": "[canon] Studio indépendant derrière le jeu. Dans l'univers, votre contrat de terraformation s'inscrit dans une économie où les planètes sont des actifs — et les convicts, de la main-d'œuvre."
+    },
+    {
+      "name": "Sentinel Corp",
+      "confidence": "canon",
+      "body": "[canon] Corporation qui orchestre missions, messages et extraction. Elle pousse à « nettoyer » les anomalies Warden et à livrer une planète rentable. Les communications late-game orientent vers certaines fins (Subjection notamment). Messages HUD + Extraction Platform : cœur du fil corporate."
+    },
+    {
+      "name": "Ikhlas & chaîne de bunkers",
+      "confidence": "canon",
+      "body": "[canon] Traces d'une présence humaine antérieure / parallèle : bunkers, journaux, caches. Ikhlas apparaît dans les fils de messages et sites au sol — pièce du puzzle sur qui était là avant vous et pourquoi la planète est morte. La chaîne bunker → notes → POI relie survie et récit sans cutscene."
+    },
+    {
+      "name": "The Wardens",
+      "confidence": "canon",
+      "body": "[canon] Civilisation antérieure (non-humaine ou post-humaine selon lectures). Ruines, orbe anomalique, clés, portail. Ils ont peut-être fui la planète stérile et laissé un chemin de sortie — ou un piège. Les fins Subversion / Ancient Paradise gravitent autour d'eux. [communauté] Interprétations sur leur nature exacte varient ; le jeu laisse volontairement des zones d'ombre."
+    },
+    {
+      "name": "Riley & contrebandiers",
+      "confidence": "canon",
+      "body": "[canon] Canal alternatif d'extraction (fin Subservience) : un contact qui organise l'évacuation hors du cadre Sentinel, après terraformation complète / messages associés."
+    },
+    {
+      "name": "Starform Robotics (Skeo)",
+      "confidence": "community",
+      "body": "[communauté] Sur Skeo, des joueurs rapportent des mentions / indices « Starform Robotics » dans le nouvel environnement et le lore local. Non traité ici comme secret canon studio vérifié — observation communautaire à croiser avec vos propres findings et les notes de patch."
+    }
+  ],
+  "tone": "Le lore se délivre par messages, holos et environnement storytelling — pas de cutscenes longues. Explorez, lisez, connectez les POI. Méfiez-vous des spoilers Skeo encore frais (update ~09/2026)."
+}

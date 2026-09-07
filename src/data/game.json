@@ -1,0 +1,34 @@
+{
+  "id": "le-jeu",
+  "title": "Le jeu",
+  "intro": "The Planet Crafter mélange survival, construction de base et progression environnementale. Vous êtes déposé sur une planète hostile ; votre mission : la terraformer jusqu'à ce qu'elle accueille la vie.",
+  "pillars": [
+    {
+      "title": "Survival",
+      "body": "Gérez oxygène, nourriture, hydratation et température. Les premières heures sont tendues : scrap, caves et épaves pour tenir jusqu'à votre première base pressurisée."
+    },
+    {
+      "title": "Base & crafting",
+      "body": "Modules d'habitat, stockage, énergie (éolien, solaire, nucléaire…), machines de heat/O₂/pression/biomasse, automatisation via drones et fusees. Le crafting débloque les paliers technologiques via microchips et recherches."
+    },
+    {
+      "title": "Chill & rythme libre",
+      "body": "Pas de timer agressif sur la terraformation : les machines tournent pendant que vous explorez. Idéal pour une session zen ou une campagne longue."
+    },
+    {
+      "title": "Co-op",
+      "body": "Multijoueur coopératif (souvent cité 1–10+, selon version/patch). Partagez la même planète, construisez ensemble, explorez en équipe. Les joueurs restent sur le même corps céleste à un instant T."
+    },
+    {
+      "title": "Créatif & difficulté",
+      "body": "Modes et réglages pour alléger ou durcir le survival (besoins vitaux, dégâts, ressources). Le mode créatif permet de se concentrer sur la construction et le paysage."
+    }
+  ],
+  "loop": [
+    "Collecter ressources & blueprints",
+    "Étendre énergie + machines TI",
+    "Explorer biomes / épaves / bunkers",
+    "Franchir une étape de ciel / vie",
+    "Rockets, fuses, optimizers → explosion de TI"
+  ]
+}

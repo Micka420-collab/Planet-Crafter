@@ -1,0 +1,150 @@
+@import "tailwindcss";
+@import "@fontsource/syne/400.css";
+@import "@fontsource/syne/600.css";
+@import "@fontsource/syne/700.css";
+@import "@fontsource/syne/800.css";
+@import "@fontsource/outfit/400.css";
+@import "@fontsource/outfit/500.css";
+@import "@fontsource/outfit/600.css";
+@import "@fontsource/outfit/700.css";
+@import "@fontsource/ibm-plex-sans/400.css";
+@import "@fontsource/ibm-plex-sans/500.css";
+@import "@fontsource/ibm-plex-sans/600.css";
+
+@theme {
+  --font-display: "Syne", "Outfit", system-ui, sans-serif;
+  --font-headline: "Outfit", "Syne", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, sans-serif;
+  --color-void: #0a0605;
+  --color-panel: color-mix(in oklab, #120c0a 70%, transparent);
+}
+
+:root {
+  --sky: #2a120c;
+  --haze: #c45c2a;
+  --accent: #e87a3a;
+  --fog: color-mix(in oklab, var(--haze) 28%, transparent);
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  background: var(--color-void);
+  color: #f2ebe4;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--accent) 45%, transparent);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+.font-headline {
+  font-family: var(--font-headline);
+}
+
+.glass {
+  background: linear-gradient(
+    145deg,
+    color-mix(in oklab, #ffffff 10%, transparent),
+    color-mix(in oklab, #000000 35%, transparent)
+  );
+  border: 1px solid color-mix(in oklab, #ffffff 14%, transparent);
+  box-shadow:
+    0 10px 40px color-mix(in oklab, #000 45%, transparent),
+    inset 0 1px 0 color-mix(in oklab, #fff 12%, transparent);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.grain::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  opacity: 0.07;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.sky-wash {
+  background:
+    radial-gradient(120% 80% at 50% -10%, var(--fog), transparent 55%),
+    radial-gradient(80% 50% at 80% 20%, color-mix(in oklab, var(--accent) 18%, transparent), transparent 50%),
+    linear-gradient(180deg, var(--sky) 0%, #0a0605 55%, #070b0a 100%);
+  transition: background 700ms ease;
+}
+
+.prose-dense p {
+  line-height: 1.65;
+  color: color-mix(in oklab, #f2ebe4 88%, transparent);
+}
+
+.slider-ti {
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #c45c2a, #3d8fd1, #3cb37a);
+  outline: none;
+}
+.slider-ti::-webkit-slider-thumb {
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 16px color-mix(in oklab, var(--accent) 60%, transparent);
+  cursor: pointer;
+}
+.slider-ti::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid var(--accent);
+  cursor: pointer;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  padding: 0.75rem 1rem;
+  background: #000;
+  color: #fff;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}

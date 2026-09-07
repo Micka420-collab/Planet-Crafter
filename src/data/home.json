@@ -1,0 +1,13 @@
+{
+  "title": "Prime Portal",
+  "tagline": "Encyclopédie fan de The Planet Crafter",
+  "pitch": "Transformez une planète rouge et stérile en monde bleu, verdoyant et respirable. Survival construction, crafting, exploration et co-op — à votre rythme.",
+  "highlights": [
+    { "label": "Terraformation", "text": "Heat · O₂ · Pression · Biomasse → Index TI" },
+    { "label": "Ambition", "text": "Solo chill ou co-op jusqu'à 10+ joueurs" },
+    { "label": "Univers", "text": "Prime, Humble, Toxicity, Selenea, Skeo — et lore Warden" }
+  ],
+  "ctaNote": "Les promos Steam fluctuent (souvent autour de −50 %, parfois plus / moins selon période) — vérifie toujours le prix actuel sur la page store.",
+  "steamUrl": "https://store.steampowered.com/app/1284190/The_Planet_Crafter/",
+  "disclaimer": "Site fan non officiel. The Planet Crafter, Miju Games et Steam sont des marques de leurs propriétaires respectifs."
+}

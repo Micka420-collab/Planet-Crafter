@@ -1,29 +1,30 @@
 @import "tailwindcss";
-@import "@fontsource/syne/400.css";
-@import "@fontsource/syne/600.css";
-@import "@fontsource/syne/700.css";
-@import "@fontsource/syne/800.css";
-@import "@fontsource/outfit/400.css";
-@import "@fontsource/outfit/500.css";
-@import "@fontsource/outfit/600.css";
-@import "@fontsource/outfit/700.css";
-@import "@fontsource/ibm-plex-sans/400.css";
-@import "@fontsource/ibm-plex-sans/500.css";
-@import "@fontsource/ibm-plex-sans/600.css";
+@import "@fontsource/space-grotesk/400.css";
+@import "@fontsource/space-grotesk/500.css";
+@import "@fontsource/space-grotesk/700.css";
+@import "@fontsource/ibm-plex-mono/400.css";
+@import "@fontsource/ibm-plex-mono/500.css";
+@import "@fontsource/ibm-plex-mono/600.css";
 
 @theme {
-  --font-display: "Syne", "Outfit", system-ui, sans-serif;
-  --font-headline: "Outfit", "Syne", system-ui, sans-serif;
-  --font-body: "IBM Plex Sans", system-ui, sans-serif;
-  --color-void: #0a0605;
-  --color-panel: color-mix(in oklab, #120c0a 70%, transparent);
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-headline: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --color-void: #08090a;
+  --color-cream: #ede6da;
+  --color-teal: #57d9c4;
+  --color-amber: #c9762f;
+  --color-coral: #e2542c;
+  --color-green: #7fbf6a;
+  --color-panel: rgba(14, 16, 18, 0.9);
 }
 
 :root {
-  --sky: #2a120c;
-  --haze: #c45c2a;
-  --accent: #e87a3a;
-  --fog: color-mix(in oklab, var(--haze) 28%, transparent);
+  --sky: #08090a;
+  --haze: #c9762f;
+  --accent: #57d9c4;
+  --fog: color-mix(in oklab, var(--haze) 20%, transparent);
   color-scheme: dark;
 }
 
@@ -49,71 +50,104 @@ body {
   min-height: 100vh;
   font-family: var(--font-body);
   background: var(--color-void);
-  color: #f2ebe4;
+  color: var(--color-cream);
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--color-teal);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-cream);
 }
 
 ::selection {
-  background: color-mix(in oklab, var(--accent) 45%, transparent);
-  color: #fff;
+  background: var(--color-amber);
+  color: var(--color-void);
 }
 
 :focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--color-teal);
   outline-offset: 3px;
 }
 
-.font-display {
+.font-display,
+.font-headline {
   font-family: var(--font-display);
 }
-.font-headline {
-  font-family: var(--font-headline);
+.font-mono {
+  font-family: var(--font-mono);
 }
 
-.glass {
-  background: linear-gradient(
-    145deg,
-    color-mix(in oklab, #ffffff 10%, transparent),
-    color-mix(in oklab, #000000 35%, transparent)
-  );
-  border: 1px solid color-mix(in oklab, #ffffff 14%, transparent);
-  box-shadow:
-    0 10px 40px color-mix(in oklab, #000 45%, transparent),
-    inset 0 1px 0 color-mix(in oklab, #fff 12%, transparent);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-}
-
-.grain::before {
-  content: "";
-  pointer-events: none;
+/* Atmosphere: fixed radial glows + subtle grid */
+.atmosphere {
   position: fixed;
   inset: 0;
-  z-index: 60;
-  opacity: 0.07;
-  mix-blend-mode: overlay;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+.atmosphere-glow-amber {
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120vw;
+  height: 90vw;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201, 118, 47, 0.2), transparent 58%);
+  filter: blur(30px);
+}
+.atmosphere-glow-teal {
+  position: absolute;
+  bottom: -40%;
+  right: -20%;
+  width: 90vw;
+  height: 90vw;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(87, 217, 196, 0.11), transparent 60%);
+  filter: blur(30px);
+}
+.atmosphere-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(237, 230, 218, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(237, 230, 218, 0.03) 1px, transparent 1px);
+  background-size: 96px 96px;
+}
+.atmosphere-stage-haze {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(120% 70% at 50% -5%, var(--fog), transparent 55%),
+    radial-gradient(70% 45% at 85% 15%, color-mix(in oklab, var(--accent) 14%, transparent), transparent 50%);
+  transition: background 700ms ease;
+  opacity: 0.85;
 }
 
-.sky-wash {
-  background:
-    radial-gradient(120% 80% at 50% -10%, var(--fog), transparent 55%),
-    radial-gradient(80% 50% at 80% 20%, color-mix(in oklab, var(--accent) 18%, transparent), transparent 50%),
-    linear-gradient(180deg, var(--sky) 0%, #0a0605 55%, #070b0a 100%);
-  transition: background 700ms ease;
+/* Dark industrial panels (Claude DA cards) */
+.glass {
+  background: rgba(14, 16, 18, 0.9);
+  border: 1px solid rgba(237, 230, 218, 0.11);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .prose-dense p {
   line-height: 1.65;
-  color: color-mix(in oklab, #f2ebe4 88%, transparent);
+  color: rgba(237, 230, 218, 0.78);
 }
 
 .slider-ti {
   appearance: none;
   width: 100%;
-  height: 6px;
+  height: 4px;
   border-radius: 999px;
-  background: linear-gradient(90deg, #c45c2a, #3d8fd1, #3cb37a);
+  background: rgba(237, 230, 218, 0.18);
   outline: none;
 }
 .slider-ti::-webkit-slider-thumb {
@@ -121,18 +155,133 @@ body {
   width: 22px;
   height: 22px;
   border-radius: 50%;
-  background: #fff;
-  border: 3px solid var(--accent);
-  box-shadow: 0 0 16px color-mix(in oklab, var(--accent) 60%, transparent);
-  cursor: pointer;
+  background: #ede6da;
+  border: 3px solid #08090a;
+  box-shadow:
+    0 0 0 1px #57d9c4,
+    0 0 18px rgba(87, 217, 196, 0.7);
+  cursor: grab;
 }
 .slider-ti::-moz-range-thumb {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  background: #fff;
-  border: 3px solid var(--accent);
-  cursor: pointer;
+  background: #ede6da;
+  border: 3px solid #08090a;
+  box-shadow: 0 0 0 1px #57d9c4;
+  cursor: grab;
+}
+
+.header-gradient-bar {
+  height: 2px;
+  background: linear-gradient(90deg, #c9762f, #e2542c 30%, #57d9c4 72%, #7fbf6a);
+}
+
+.nav-pill {
+  padding: 8px 11px;
+  border-radius: 4px;
+  color: rgba(237, 230, 218, 0.85);
+  transition: background 200ms ease, color 200ms ease;
+}
+.nav-pill:hover {
+  background: rgba(87, 217, 196, 0.1);
+  color: #57d9c4;
+}
+.nav-pill-active {
+  color: #57d9c4;
+  background: rgba(87, 217, 196, 0.12);
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 22px;
+  border-radius: 4px;
+  background: #57d9c4;
+  color: #08090a;
+  font-weight: 700;
+  font-size: 15px;
+  transition: background 200ms ease;
+}
+.btn-primary:hover {
+  background: #ede6da;
+  color: #08090a;
+}
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 22px;
+  border-radius: 4px;
+  border: 1px solid rgba(237, 230, 218, 0.22);
+  color: #ede6da;
+  font-weight: 500;
+  font-size: 15px;
+  transition: border-color 200ms ease, color 200ms ease;
+}
+.btn-secondary:hover {
+  border-color: #c9762f;
+  color: #c9762f;
+}
+.btn-coral {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 9px 15px;
+  border-radius: 4px;
+  background: #e2542c;
+  color: #08090a;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  transition: background 200ms ease;
+}
+.btn-coral:hover {
+  background: #ede6da;
+  color: #08090a;
+}
+
+.label-mono {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #57d9c4;
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-pulse-dot {
+  animation: pulse-dot 1.8s ease-in-out infinite;
+}
+.animate-spin-slow {
+  animation: spin-slow 24s linear infinite;
 }
 
 .skip-link {

@@ -4,13 +4,13 @@ import { Section } from '../components/Section'
 
 export function Exploration() {
   return (
-    <Section id={exploration.id} title={exploration.title} eyebrow="Monde ouvert">
+    <Section id={exploration.id} title={exploration.title} eyebrow="03 · Guide · Exploration">
       <p className="mb-8 max-w-3xl">{exploration.intro}</p>
       <div className="grid gap-4 lg:grid-cols-2">
         <GlassPanel as="article">
           <h3 className="font-headline text-xl font-semibold">{exploration.hud.title}</h3>
           <p className="mt-2 text-sm">{exploration.hud.body}</p>
-          <ul className="mt-3 list-disc space-y-1 pl-5 text-xs text-white/65">
+          <ul className="mt-3 list-disc space-y-1 pl-5 text-xs text-cream/65">
             {exploration.hud.tips.map((t) => (
               <li key={t}>{t}</li>
             ))}
@@ -26,14 +26,14 @@ export function Exploration() {
         {exploration.biomes.map((b) => (
           <GlassPanel key={b.name} className="!p-4">
             <p className="font-medium">{b.name}</p>
-            <p className="mt-1 text-xs text-white/65">{b.blurb}</p>
+            <p className="mt-1 text-xs text-cream/65">{b.blurb}</p>
           </GlassPanel>
         ))}
       </div>
       <GlassPanel className="mt-4" as="article">
         <h3 className="font-headline text-xl font-semibold">{exploration.wrecks.title}</h3>
         <p className="mt-2 text-sm">{exploration.wrecks.body}</p>
-        <ul className="mt-3 list-disc space-y-1 pl-5 text-xs text-white/65">
+        <ul className="mt-3 list-disc space-y-1 pl-5 text-xs text-cream/65">
           {exploration.wrecks.tips.map((t) => (
             <li key={t}>{t}</li>
           ))}

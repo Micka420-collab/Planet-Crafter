@@ -4,7 +4,7 @@ import { Section } from '../components/Section'
 
 export function Rares() {
   return (
-    <Section id={rares.id} title={rares.title} eyebrow="Collection">
+    <Section id={rares.id} title={rares.title} eyebrow="05 · Collection">
       <p className="mb-8 max-w-3xl">{rares.intro}</p>
       <div className="grid gap-4 md:grid-cols-2">
         {rares.categories.map((c) => (
@@ -14,7 +14,7 @@ export function Rares() {
           </GlassPanel>
         ))}
       </div>
-      <p className="mt-6 text-sm text-white/60">{rares.advice}</p>
+      <p className="mt-6 text-sm text-cream/60">{rares.advice}</p>
     </Section>
   )
 }

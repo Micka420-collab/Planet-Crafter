@@ -25,48 +25,51 @@ export function SearchPalette({ open, onClose }: { open: boolean; onClose: () =>
 
   return (
     <div
-      className="fixed inset-0 z-[80] flex items-start justify-center bg-black/70 p-4 pt-[12vh] backdrop-blur-sm"
+      className="fixed inset-0 z-[80] flex items-start justify-center bg-void/80 p-4 pt-[12vh] backdrop-blur-sm"
       role="dialog"
       aria-modal="true"
       aria-label="Recherche"
       onClick={onClose}
     >
       <div
-        className="glass w-full max-w-xl overflow-hidden rounded-2xl"
+        className="glass w-full max-w-xl overflow-hidden rounded-md"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="border-b border-white/10 p-3">
+        <div className="border-b border-cream/10 p-3">
+          <p className="label-mono mb-2 text-[10px]">Recherche · encyclopédie</p>
           <input
             ref={inputRef}
             value={q}
             onChange={(e) => setQ(e.target.value)}
             placeholder="Rechercher étapes, lore, DLC, rares…"
-            className="w-full bg-transparent text-base outline-none placeholder:text-white/40"
+            className="w-full bg-transparent font-display text-base text-cream outline-none placeholder:text-cream/40"
             aria-controls={listId}
             aria-autocomplete="list"
           />
         </div>
         <ul id={listId} className="max-h-[50vh] overflow-y-auto p-2" role="listbox">
           {q && results.length === 0 ? (
-            <li className="px-3 py-4 text-sm text-white/55">Aucun résultat.</li>
+            <li className="px-3 py-4 text-sm text-cream/55">Aucun résultat.</li>
           ) : null}
           {results.map((r) => (
             <li key={r.id} role="option">
               <a
                 href={`#${r.sectionId}`}
-                className="block rounded-xl px-3 py-3 hover:bg-white/5"
+                className="block rounded-md px-3 py-3 hover:bg-teal/10"
                 onClick={onClose}
               >
                 <div className="flex items-center justify-between gap-2">
-                  <span className="font-medium">{r.title}</span>
-                  <span className="text-[10px] uppercase tracking-wider text-white/45">{r.section}</span>
+                  <span className="font-medium text-cream">{r.title}</span>
+                  <span className="font-mono text-[10px] uppercase tracking-wider text-teal/80">
+                    {r.section}
+                  </span>
                 </div>
-                <p className="mt-1 line-clamp-2 text-xs text-white/60">{r.blurb}</p>
+                <p className="mt-1 line-clamp-2 text-xs text-cream/60">{r.blurb}</p>
               </a>
             </li>
           ))}
           {!q ? (
-            <li className="px-3 py-4 text-sm text-white/55">
+            <li className="px-3 py-4 text-sm text-cream/55">
               Tapez pour filtrer toute l&apos;encyclopédie. Esc pour fermer.
             </li>
           ) : null}

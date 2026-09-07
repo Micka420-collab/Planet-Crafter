@@ -14,16 +14,27 @@ import secrets from './secrets.json'
 import specs from './specs.json'
 import sources from './sources.json'
 
+/** Claude Design IA primary nav → mapped existing section anchors */
+export const PRIMARY_NAV = [
+  { id: 'accueil', label: 'Accueil' },
+  { id: 'etapes', label: 'Terraformation' },
+  { id: 'dlc', label: 'Mondes' },
+  { id: 'systemes', label: 'Guide' },
+  { id: 'lore', label: 'Lore' },
+  { id: 'secrets', label: 'Secrets' },
+  { id: 'studio', label: 'Studio' },
+] as const
+
 export const NAV_SECTIONS = [
   { id: 'accueil', label: 'Accueil' },
+  { id: 'etapes', label: 'Terraformation' },
   { id: 'le-jeu', label: 'Le jeu' },
-  { id: 'etapes', label: 'Étapes TI' },
-  { id: 'systemes', label: 'Systèmes' },
+  { id: 'systemes', label: 'Guide / Systèmes' },
   { id: 'exploration', label: 'Exploration' },
+  { id: 'dlc', label: 'Mondes / DLC' },
   { id: 'lore', label: 'Lore' },
   { id: 'rares', label: 'Rares' },
   { id: 'fins', label: 'Fins' },
-  { id: 'dlc', label: 'DLC' },
   { id: 'studio', label: 'Studio' },
   { id: 'secrets', label: 'Secrets' },
   { id: 'specs', label: 'Specs' },

@@ -1,11 +1,12 @@
 import { useEffect, useRef } from 'react'
 import { useReducedMotion } from '../hooks/useReducedMotion'
-import { useThemeStage } from '../hooks/useThemeStage'
 
+const PALETTE = ['#C9762F', '#EDE6DA', '#57D9C4']
+
+/** Drifting dust particles — Claude Design atmosphere */
 export function Particles() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const reduced = useReducedMotion()
-  const { stage } = useThemeStage()
 
   useEffect(() => {
     if (reduced) return
@@ -17,13 +18,15 @@ export function Particles() {
     let raf = 0
     let w = 0
     let h = 0
-    const particles = Array.from({ length: 48 }, () => ({
+    const particles = Array.from({ length: 36 }, (_, i) => ({
       x: Math.random(),
-      y: Math.random(),
-      r: 0.6 + Math.random() * 1.8,
-      vx: (Math.random() - 0.5) * 0.00035,
-      vy: -0.00015 - Math.random() * 0.0004,
-      a: 0.15 + Math.random() * 0.45,
+      y: 0.85 + Math.random() * 0.2,
+      r: 0.8 + Math.random() * 1.6,
+      vx: 0.00008 + Math.random() * 0.00012,
+      vy: -0.00018 - Math.random() * 0.00035,
+      a: 0.25 + Math.random() * 0.45,
+      color: PALETTE[i % PALETTE.length]!,
+      life: Math.random(),
     }))
 
     const resize = () => {
@@ -40,14 +43,18 @@ export function Particles() {
 
     const tick = () => {
       ctx.clearRect(0, 0, w, h)
-      ctx.fillStyle = stage.accent
       for (const p of particles) {
         p.x += p.vx
         p.y += p.vy
-        if (p.y < -0.02) p.y = 1.02
-        if (p.x < -0.02) p.x = 1.02
-        if (p.x > 1.02) p.x = -0.02
-        ctx.globalAlpha = p.a
+        p.life += 0.0015
+        if (p.y < -0.05 || p.life > 1) {
+          p.x = Math.random()
+          p.y = 1.02
+          p.life = 0
+        }
+        const fade = p.life < 0.12 ? p.life / 0.12 : p.life > 0.88 ? (1 - p.life) / 0.12 : 1
+        ctx.globalAlpha = p.a * fade
+        ctx.fillStyle = p.color
         ctx.beginPath()
         ctx.arc(p.x * w, p.y * h, p.r, 0, Math.PI * 2)
         ctx.fill()
@@ -60,14 +67,14 @@ export function Particles() {
       cancelAnimationFrame(raf)
       window.removeEventListener('resize', resize)
     }
-  }, [reduced, stage.accent])
+  }, [reduced])
 
   if (reduced) return null
   return (
     <canvas
       ref={canvasRef}
       aria-hidden
-      className="pointer-events-none fixed inset-0 z-[5] opacity-70"
+      className="pointer-events-none fixed inset-0 z-[5] opacity-80"
     />
   )
 }

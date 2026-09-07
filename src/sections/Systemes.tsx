@@ -4,7 +4,7 @@ import { Section } from '../components/Section'
 
 export function Systemes() {
   return (
-    <Section id={systems.id} title={systems.title} eyebrow="Simulation">
+    <Section id={systems.id} title={systems.title} eyebrow="03 · Guide · Systèmes">
       <p className="mb-8 max-w-3xl">{systems.intro}</p>
       <div className="grid gap-4 md:grid-cols-2">
         {systems.pillars.map((p) => (
@@ -16,7 +16,7 @@ export function Systemes() {
               {p.name}
             </h3>
             <p className="mt-2 text-sm">{p.body}</p>
-            <ul className="mt-3 list-disc space-y-1 pl-5 text-xs text-white/65">
+            <ul className="mt-3 list-disc space-y-1 pl-5 text-xs text-cream/65">
               {p.tips.map((t) => (
                 <li key={t}>{t}</li>
               ))}
@@ -29,7 +29,7 @@ export function Systemes() {
           <GlassPanel key={block.title} as="article">
             <h3 className="font-headline text-lg font-semibold">{block.title}</h3>
             <p className="mt-2 text-sm">{block.body}</p>
-            <ul className="mt-3 space-y-1 text-xs text-white/60">
+            <ul className="mt-3 space-y-1 text-xs text-cream/60">
               {block.notes.map((n) => (
                 <li key={n}>• {n}</li>
               ))}
@@ -42,7 +42,7 @@ export function Systemes() {
           <GlassPanel key={block.title} as="article">
             <h3 className="font-headline text-lg font-semibold">{block.title}</h3>
             <p className="mt-2 text-sm">{block.body}</p>
-            <ul className="mt-3 space-y-1 text-xs text-white/60">
+            <ul className="mt-3 space-y-1 text-xs text-cream/60">
               {block.notes.map((n) => (
                 <li key={n}>• {n}</li>
               ))}

@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import stagesData from './data/stages.json'
 import type { TIStage } from './data/types'
+import { Atmosphere } from './components/Atmosphere'
 import { Footer } from './components/Footer'
 import { Nav } from './components/Nav'
 import { Particles } from './components/Particles'
@@ -51,7 +52,7 @@ export default function App() {
     root.style.setProperty('--sky', stage.sky)
     root.style.setProperty('--haze', stage.haze)
     root.style.setProperty('--accent', stage.accent)
-    root.style.setProperty('--fog', `color-mix(in oklab, ${stage.haze} 28%, transparent)`)
+    root.style.setProperty('--fog', `color-mix(in oklab, ${stage.haze} 22%, transparent)`)
   }, [stage])
 
   const ctx = useMemo(
@@ -64,21 +65,23 @@ export default function App() {
       <a className="skip-link" href="#accueil">
         Aller au contenu
       </a>
-      <div className="grain sky-wash relative min-h-screen">
+      <div className="relative min-h-screen bg-void text-cream">
+        <Atmosphere />
         <Particles />
         <Nav onOpenSearch={() => setSearchOpen(true)} />
-        <main>
+        <main className="relative z-[1]">
           <Hero />
-          <LeJeu />
+          {/* Claude IA: Accueil → Terraformation → Mondes → Guide → Lore → Secrets → Studio */}
           <Etapes />
+          <DLC />
+          <LeJeu />
           <Systemes />
           <Exploration />
           <Lore />
-          <Rares />
           <Endings />
-          <DLC />
-          <Studio />
+          <Rares />
           <Secrets />
+          <Studio />
           <Specs />
           <Sources />
         </main>

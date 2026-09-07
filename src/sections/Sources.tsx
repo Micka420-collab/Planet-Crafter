@@ -5,7 +5,7 @@ import { SteamCTA } from '../components/SteamCTA'
 
 export function Sources() {
   return (
-    <Section id={sources.id} title={sources.title} eyebrow="Références">
+    <Section id={sources.id} title={sources.title} eyebrow="Dossier · Sources">
       <p className="mb-8 max-w-3xl">{sources.intro}</p>
       <ul className="grid gap-3 md:grid-cols-2">
         {sources.links.map((l) => (
@@ -15,11 +15,11 @@ export function Sources() {
                 href={l.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-headline text-lg font-semibold text-[color:var(--accent)] hover:underline"
+                className="font-headline text-lg font-semibold text-teal hover:underline"
               >
                 {l.name} ↗
               </a>
-              <p className="mt-2 text-sm text-white/70">{l.why}</p>
+              <p className="mt-2 text-sm text-cream/70">{l.why}</p>
             </GlassPanel>
           </li>
         ))}

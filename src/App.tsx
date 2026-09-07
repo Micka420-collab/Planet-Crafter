@@ -69,7 +69,7 @@ export default function App() {
         <Atmosphere />
         <Particles />
         <Nav onOpenSearch={() => setSearchOpen(true)} />
-        <main className="relative z-[1]">
+        <main className="relative z-10">
           <Hero />
           {/* Claude IA: Accueil → Terraformation → Mondes → Guide → Lore → Secrets → Studio */}
           <Etapes />

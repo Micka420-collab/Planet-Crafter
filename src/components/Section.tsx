@@ -17,10 +17,11 @@ export function Section({
   return (
     <section id={id} className="relative z-[1] scroll-mt-28 px-4 py-16 md:px-8 md:py-24">
       <motion.div
-        initial={reduced ? false : { opacity: 0, y: 28 }}
-        whileInView={reduced ? undefined : { opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: '-10% 0px' }}
-        transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+        // Never start at opacity 0 — whileInView can miss and leave content invisible.
+        initial={reduced ? false : { y: 16 }}
+        whileInView={reduced ? undefined : { y: 0 }}
+        viewport={{ once: true, amount: 0.08 }}
+        transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
         className="mx-auto max-w-6xl"
       >
         <header className="mb-8 md:mb-10">

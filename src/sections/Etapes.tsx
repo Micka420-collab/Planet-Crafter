@@ -62,14 +62,6 @@ export function Etapes() {
         </div>
       </GlassPanel>
 
-      <GlassPanel className="mt-6">
-        <p className="text-sm">
-          Astuce : le slider (étapes Prime) modifie les variables CSS{' '}
-          <code className="text-teal">--sky</code>,{' '}
-          <code className="text-teal">--haze</code> et{' '}
-          <code className="text-teal">--accent</code> pour toute la page.
-        </p>
-      </GlassPanel>
     </Section>
   )
 }

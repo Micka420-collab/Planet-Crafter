@@ -71,14 +71,8 @@ export function Hero() {
         >
           <div className="absolute inset-8 rounded-full bg-amber/25 opacity-40 blur-3xl" />
           <PlanetSVG className="relative w-full drop-shadow-[0_0_40px_rgba(87,217,196,0.25)]" />
-          <p className="mt-4 text-center font-mono text-[10px] tracking-wider text-cream/45">
-            ART SVG ORIGINAL · THÈME RÉACTIF AU SLIDER TI
-          </p>
         </motion.div>
       </div>
-      <p className="mx-auto mt-16 max-w-6xl text-center font-mono text-xs tracking-wide text-cream/40">
-        Faites défiler : ciel barren → bleu → verdoyant. Ou pilotez le slider d&apos;étapes.
-      </p>
     </section>
   )
 }

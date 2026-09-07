@@ -6,11 +6,11 @@ export function SteamCTA({ compact = false }: { compact?: boolean }) {
       className={
         compact
           ? ''
-          : 'rounded-md border border-coral/40 bg-gradient-to-r from-coral/20 to-[rgba(14,16,18,0.7)] p-5 md:p-6'
+          : 'rounded-md border border-coral/40 bg-gradient-to-r from-coral/20 to-[rgba(14,16,18,0.7)] p-4 sm:p-5 md:p-6'
       }
     >
       <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-        <div>
+        <div className="min-w-0">
           <p className="font-headline text-lg font-semibold text-cream md:text-xl">
             Jouer sur Steam
           </p>
@@ -20,7 +20,7 @@ export function SteamCTA({ compact = false }: { compact?: boolean }) {
           href={home.steamUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn-coral shrink-0 px-5 py-3 text-sm"
+          className="btn-coral w-full shrink-0 justify-center px-5 py-3 text-sm sm:w-auto"
         >
           Voir sur Steam →
         </a>

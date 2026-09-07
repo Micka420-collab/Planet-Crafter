@@ -15,7 +15,7 @@ export function Sources() {
                 href={l.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-headline text-lg font-semibold text-teal hover:underline"
+                className="font-headline break-words text-lg font-semibold text-teal hover:underline"
               >
                 {l.name} ↗
               </a>

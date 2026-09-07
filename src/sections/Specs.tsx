@@ -40,7 +40,7 @@ export function Specs() {
       <GlassPanel className="mt-4">
         <h3 className="font-headline text-lg font-semibold">Langues</h3>
         <p className="mt-2 text-sm text-cream/70">{specs.languages.note}</p>
-        <p className="mt-3 text-sm">{specs.languages.interface.join(' · ')}</p>
+        <p className="mt-3 break-words text-sm">{specs.languages.interface.join(' · ')}</p>
       </GlassPanel>
     </Section>
   )

@@ -10,5 +10,5 @@ export function GlassPanel({
   className?: string
   as?: 'div' | 'article' | 'section' | 'aside'
 }) {
-  return <Tag className={cn('glass rounded-md p-5 md:p-6', className)}>{children}</Tag>
+  return <Tag className={cn('glass min-w-0 rounded-md p-4 sm:p-5 md:p-6', className)}>{children}</Tag>
 }

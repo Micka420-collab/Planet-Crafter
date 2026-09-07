@@ -15,7 +15,7 @@ export function Studio() {
                 className="flex flex-col gap-0.5 border-b border-cream/8 pb-3 last:border-0 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4"
               >
                 <dt className="text-xs uppercase tracking-wider text-cream/45">{f.label}</dt>
-                <dd className="text-cream sm:text-right">{f.value}</dd>
+                <dd className="min-w-0 break-words text-cream sm:text-right">{f.value}</dd>
               </div>
             ))}
           </dl>

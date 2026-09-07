@@ -65,7 +65,7 @@ export default function App() {
       <a className="skip-link" href="#accueil">
         Aller au contenu
       </a>
-      <div className="relative min-h-screen bg-void text-cream">
+      <div className="relative min-h-screen overflow-x-clip bg-void text-cream">
         <Atmosphere />
         <Particles />
         <Nav onOpenSearch={() => setSearchOpen(true)} />
